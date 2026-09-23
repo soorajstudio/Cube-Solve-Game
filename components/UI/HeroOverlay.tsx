@@ -355,28 +355,6 @@ export const HeroOverlay = () => {
                   </div>
                 </div>
 
-                {/* Feature Chips Row */}
-                <div className="flex items-center gap-2 flex-wrap">
-                  {[
-                    { icon: "📷", label: "3D Rotation" },
-                    { icon: "✏️", label: "Custom Themes" },
-                    { icon: "📊", label: "Track Metrics" },
-                    { icon: "🔊", label: "Dynamic Sound" },
-                  ].map((feat, i) => (
-                    <div
-                      key={i}
-                      className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-mono-tech font-medium border backdrop-blur-md shadow-xs ${
-                        isLight 
-                          ? 'bg-white/80 border-slate-200/80 text-slate-600' 
-                          : 'bg-neutral-900/80 border-white/10 text-slate-300'
-                      }`}
-                    >
-                      <span className="text-[11px]">{feat.icon}</span>
-                      <span>{feat.label}</span>
-                    </div>
-                  ))}
-                </div>
-
               </div>
 
               {/* Right Background & Floating Widgets Column (5 cols) */}
