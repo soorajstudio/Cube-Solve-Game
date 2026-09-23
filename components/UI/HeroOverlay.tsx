@@ -377,17 +377,25 @@ export const HeroOverlay = () => {
                   </div>
                 </div>
 
-                {/* Handwritten Cursive Note with Arrow: Rotate, Explore, Solve */}
-                <div className="hidden lg:flex items-center gap-3 absolute top-[36%] right-[220px] pointer-events-none select-none">
-                  <div className="font-cursive text-2xl text-slate-600 dark:text-slate-300 font-bold leading-tight text-right rotate-[-6deg]">
+                {/* Handwritten Cursive Note with Arrow: Rotate, Explore, Solve (Positioned on the left side of the cube) */}
+                <div className="hidden lg:flex items-center gap-2 xl:gap-3 absolute top-[35%] -left-20 xl:-left-28 2xl:-left-36 pointer-events-none select-none z-20">
+                  <div className="font-cursive text-xl xl:text-2xl text-slate-600 dark:text-slate-300 font-bold leading-tight text-right rotate-[-4deg]">
                     Rotate<br />
                     Explore<br />
                     Solve
                   </div>
-                  {/* Hand drawn style curvy arrow */}
-                  <svg className="w-12 h-12 text-slate-400 -rotate-12" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-                    <path d="M10 80 Q 50 20 80 50" />
-                    <path d="M70 40 L 80 50 L 70 60" />
+                  {/* Hand drawn style curvy arrow pointing towards the cube */}
+                  <svg 
+                    className="w-10 h-10 xl:w-12 xl:h-12 text-slate-400 dark:text-slate-500 drop-shadow-sm select-none" 
+                    viewBox="0 0 100 80" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    strokeWidth="2.8" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round"
+                  >
+                    <path d="M 12 52 Q 45 15 82 32" />
+                    <path d="M 68 23 L 82 32 L 72 45" />
                   </svg>
                 </div>
 
